@@ -14,3 +14,7 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
     observer.observe(element);
 });
+
+document.querySelectorAll(".category-card, .step-card").forEach((element, index) => {
+    element.style.transitionDelay = `${Math.min(index, 5) * 70}ms`;
+});
