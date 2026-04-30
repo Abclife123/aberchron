@@ -13,6 +13,7 @@
     --cta: #ff8a1f;
     --cta-strong: #ffc145;
     --cta-ink: #2b1400;
+    --edge-haze: rgba(56, 237, 222, 0.26);
     --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
     --shadow-glow: 0 0 44px rgba(56, 237, 222, 0.24);
 }
@@ -104,13 +105,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 16px 22px;
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 20;
     backdrop-filter: blur(12px);
     background: rgba(6, 18, 23, 0.58);
-    border-bottom: 1px solid var(--line-soft);
+    border: 1px solid var(--line-soft);
+    border-radius: 22px;
+    box-shadow: 0 0 0 1px rgba(56, 237, 222, 0.14), 0 0 26px var(--edge-haze);
 }
 
 .brand {
@@ -178,7 +181,7 @@ main {
 .video-frame,
 .price-card {
     border: 1px solid var(--line);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow), 0 0 24px var(--edge-haze);
     background: linear-gradient(160deg, rgba(8, 33, 42, 0.87), rgba(6, 20, 27, 0.88));
 }
 
