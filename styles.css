@@ -10,6 +10,9 @@
     --muted: #9ac8cf;
     --accent: #38edde;
     --accent-strong: #15b8ac;
+    --cta: #ff8a1f;
+    --cta-strong: #ffc145;
+    --cta-ink: #2b1400;
     --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
     --shadow-glow: 0 0 44px rgba(56, 237, 222, 0.24);
 }
@@ -137,9 +140,9 @@ a {
 
 .nav-cta,
 .primary-button {
-    color: #032229;
-    background: linear-gradient(135deg, #4ff4e6, #20cabd);
-    box-shadow: var(--shadow-glow);
+    color: var(--cta-ink);
+    background: linear-gradient(135deg, var(--cta-strong), var(--cta));
+    box-shadow: 0 0 38px rgba(255, 145, 36, 0.34);
     font-weight: 700;
 }
 
@@ -153,6 +156,11 @@ a {
 .primary-button:hover,
 .secondary-button:hover {
     transform: translateY(-2px);
+}
+
+.nav-cta:hover,
+.primary-button:hover {
+    filter: brightness(1.05);
 }
 
 main {
