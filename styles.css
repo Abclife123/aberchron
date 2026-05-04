@@ -204,7 +204,7 @@ main {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 22px;
-    padding: 24px;
+    padding: 24px 24px 80px;
     border-radius: 34px;
 }
 
@@ -368,10 +368,10 @@ main {
 .price-card {
     position: absolute;
     right: -8px;
-    bottom: 18px;
-    width: min(270px, 75%);
-    border-radius: 22px;
-    padding: 18px;
+    bottom: -60px;
+    width: min(240px, 70%);
+    border-radius: 18px;
+    padding: 14px 16px;
     background: linear-gradient(180deg, rgba(20, 83, 95, 0.88), rgba(5, 26, 34, 0.92));
 }
 
@@ -385,9 +385,9 @@ main {
 
 .price-card strong {
     display: block;
-    margin-top: 6px;
+    margin-top: 4px;
     font-family: "Fraunces", serif;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
 }
 
 .stats-band {
