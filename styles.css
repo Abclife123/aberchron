@@ -117,9 +117,24 @@ a {
 }
 
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: "Fraunces", serif;
     font-weight: 700;
     letter-spacing: 0.12em;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(56, 237, 222, 0.5));
+}
+
+.brand-wordmark {
+    color: var(--ink);
 }
 
 .site-nav {
